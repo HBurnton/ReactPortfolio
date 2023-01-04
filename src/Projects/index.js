@@ -3,6 +3,9 @@ import Subproject from "./Subproject";
 
 import lookALike from "../assets/images/look-a-like.jpg"
 import weather from "../assets/images/weather.png"
+import jsTest from "../assets/images/javascripttest.png"
+import readMeGen from "../assets/images/readmegen.png"
+import dayplan from "../assets/images/dayplan.png"
 
 export default function Projects() {
     return (
@@ -10,12 +13,6 @@ export default function Projects() {
 
         <h2>Projects</h2>
 
-        {/* <article id="project_one">
-            <a href=""><img src="./assets/images/look-a-like.jpg" />
-            <h3>Look A Like</h3></a>
-            <p>This FULL STACK project relies on the MVC paradigm to create a website to allows users to submit images of things that look like other things. </p>
-            <a href="https://afternoon-peak-71885.herokuapp.com/">Heroku Link</a>
-        </article> */}
         <Feature 
         link = "https://github.com/HBurnton/lookALike"
         image = {lookALike}
@@ -30,67 +27,22 @@ export default function Projects() {
                 deployment= "https://hburnton.github.io/theWeathermanWeatherApp/" />
 
             <Subproject
-                link = "#"
-                image = {lookALike}
-                title = "testing"
-                deployment= "test.com" />
+                link = "https://github.com/HBurnton/javascriptTestCardiacArrest"
+                image = {jsTest}
+                title = "Vanilla JS Test"
+                deployment= "https://hburnton.github.io/javascriptTestCardiacArrest/." />
 
             <Subproject
-                link = "#"
-                image = {lookALike}
-                title = "testing"
-                deployment= "test.com" />
+                link = "https://github.com/HBurnton/ReadMeGenerator"
+                image = {readMeGen}
+                title = "Professional README.md Generator"
+                deployment= "https://www.youtube.com/watch?v=kiUzZARYJRc" />
 
             <Subproject
-                link = "#"
-                image = {lookALike}
-                title = "testing"
-                deployment= "test.com" />
-
-
-            {/* <article class="project">
-                <img src="./assets/images/weather.png" />
-                <div class="project_info">
-                    <h3>Weather Man Weather App</h3>
-                    <br />
-                    <a href="https://github.com/HBurnton/theWeathermanWeatherApp">Github Project Link</a>
-                    <br />
-                    <a href="https://hburnton.github.io/theWeathermanWeatherApp/">Deployment</a>
-                </div>
-            </article> */}
-
-            <article class="project">
-                <img src="./assets/images/javascripttest.png" />
-                <div class="project_info">
-                    <h3>Javascript Test</h3>
-                    <br />
-                    <a href="https://github.com/HBurnton/javascriptTestCardiacArrest">Github Project Link</a>
-                    <br />
-                    <a href="https://hburnton.github.io/javascriptTestCardiacArrest/">Deployment</a>
-                </div>
-            </article>
-
-            <article class="project">
-                <img src="./assets/images/readmegen.png" />
-                <div class="project_info">
-                    <h3>Professional README.md Generator</h3>
-                    <br />
-                    <a href="https://github.com/HBurnton/ReadMeGenerator">Github Project Link</a>
-                    <br />
-                    <a href="https://www.youtube.com/watch?v=kiUzZARYJRc">Demo</a>
-                </div>
-            </article>
-
-            <article class="project">
-                <img src="./assets/images/dayplan.png" />
-                <div class="project_info">
-                    <h3>Plan The Day Away</h3>
-                    <br />
-                    <a href="https://github.com/HBurnton/planTheDayAway">Github Project Link</a>
-                    <br />
-                    <a href="https://hburnton.github.io/planTheDayAway/">Deployment</a>
-                </div>
-            </article>
+                link = "https://github.com/HBurnton/planTheDayAway"
+                image = {dayplan}
+                title = "Plan The Day Away"
+                deployment= "https://hburnton.github.io/planTheDayAway/" />
         </div>
     </section>
     );
