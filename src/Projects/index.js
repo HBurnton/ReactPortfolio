@@ -1,4 +1,8 @@
 import Feature from "./Feature";
+import Subproject from "./Subproject";
+
+import lookALike from "../assets/images/look-a-like.jpg"
+import weather from "../assets/images/weather.png"
 
 export default function Projects() {
     return (
@@ -14,14 +18,37 @@ export default function Projects() {
         </article> */}
         <Feature 
         link = "https://github.com/HBurnton/lookALike"
-        image = "./assets/images/look-a-like.jpg"
+        image = {lookALike}
         title = "Look A Like"
         />
-
-
+        
         <div id="subproject">
+            <Subproject
+                link = "https://github.com/HBurnton/theWeathermanWeatherApp"
+                image = {weather}
+                title = "Weatherman Weather App"
+                deployment= "https://hburnton.github.io/theWeathermanWeatherApp/" />
 
-            <article class="project">
+            <Subproject
+                link = "#"
+                image = {lookALike}
+                title = "testing"
+                deployment= "test.com" />
+
+            <Subproject
+                link = "#"
+                image = {lookALike}
+                title = "testing"
+                deployment= "test.com" />
+
+            <Subproject
+                link = "#"
+                image = {lookALike}
+                title = "testing"
+                deployment= "test.com" />
+
+
+            {/* <article class="project">
                 <img src="./assets/images/weather.png" />
                 <div class="project_info">
                     <h3>Weather Man Weather App</h3>
@@ -30,7 +57,7 @@ export default function Projects() {
                     <br />
                     <a href="https://hburnton.github.io/theWeathermanWeatherApp/">Deployment</a>
                 </div>
-            </article>
+            </article> */}
 
             <article class="project">
                 <img src="./assets/images/javascripttest.png" />
