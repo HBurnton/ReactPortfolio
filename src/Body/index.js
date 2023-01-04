@@ -1,12 +1,16 @@
 import About from "../About";
 import Projects from "../Projects"
+import Contact from "../Contact";
 
 export default function Body() {
     return (
-        <main>
+    <main>
         <About/>
         <hr />
         <Projects/>
-        </main>
+        <hr />
+        <Contact />
+
+    </main>
     );
   }
