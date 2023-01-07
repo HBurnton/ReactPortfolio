@@ -1,4 +1,7 @@
 export default function Subproject({link, deployment, image, title}) {
+    const deployText = deployment.toLowerCase().includes('youtube') ? 'Youtube Link' : 'Deployment'
+
+
     return (
     <article class="project">
         <img src={image} />
@@ -7,7 +10,7 @@ export default function Subproject({link, deployment, image, title}) {
             <br />
             <a href={link}>Github Project Link</a>
             <br />
-            <a href={deployment}>Deployment</a>
+            <a href={deployment}>{deployText}</a>
         </div>
     </article>
     );
